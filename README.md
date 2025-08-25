@@ -40,4 +40,15 @@ Para realizar la prueba con el script en python se requieren las siguientes libr
 
 ### 4.1 Ejecucion del test
 
-Una vez tenemos el contenedor arriba, ejecutamos el script de prueba [init.py](./init.py) y probamos el endpoint en el navegador con localhost en el puerto 3000
+Una vez tenemos el contenedor arriba, ejecutamos el script de prueba [init.py](./init.py) y probamos la conexion el navegador con localhost en el [puerto 3000](localhost/3000) y usando los siguientes endpoints
+
+- [/init](localhost/3000/init) : Para poblar nuestra base de datos
+- [/personas](localhost/3000/personas) : Para listar las persona que tenemos en la base de datos
+
+o tambien se pueden ejecutar desde consola utilizando
+
+```bash
+curl http://127.0.0.1:3000/init
+curl http://127.0.0.1:3000/personas
+
+```

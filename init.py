@@ -14,7 +14,7 @@ def init_db():
     db.personas.insert_one({"nombre": "Julian", "estado": "deprimido"})
     db.personas.insert_one({"nombre": "Tonny", "estado": "Feliz"})
     db.personas.insert_one({"nombre": "Majo", "estado": "Majo"})
-    return jsonify({"mensaje": "Base de datos inicializada con éxito"})
+    return jsonify({"mensaje": "Base de datos inicializada con exito"})
 
 # Endpoint para listar todos los documentos
 @app.route("/personas")
